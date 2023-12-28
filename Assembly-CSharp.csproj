@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{F5568696-FFA9-F2B3-86B8-85FCDE4D11B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_6;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:/work/Unity/new/5.6/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:/work/Unity/new/5.6/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\DesignModeCode\DM01State.cs" />
+     <Compile Include="Assets\DesignModeCode\DM02Bridge.cs" />
+     <Compile Include="Assets\DesignModeCode\DM03Strategy.cs" />
+     <Compile Include="Assets\DesignModeCode\DM04TempleMetthod.cs" />
+     <Compile Include="Assets\DesignModeCode\DM05Builder.cs" />
+     <Compile Include="Assets\DesignModeCode\DM06Composite.cs" />
+     <Compile Include="Assets\DesignModeCode\DM07Command.cs" />
+     <Compile Include="Assets\DesignModeCode\DM08ChainOfResponsibility.cs" />
+     <Compile Include="Assets\DesignModeCode\DM09Observer.cs" />
+     <Compile Include="Assets\DesignModeCode\DM10Memento.cs" />
+     <Compile Include="Assets\DesignModeCode\DM11Visitor.cs" />
+     <Compile Include="Assets\DesignModeCode\DM12Adapter.cs" />
+     <Compile Include="Assets\DesignModeCode\DM13Decorator.cs" />
+     <Compile Include="Assets\Scripts\BasicClass\IBaseUI.cs" />
+     <Compile Include="Assets\Scripts\BasicClass\IGameSystem.cs" />
+     <Compile Include="Assets\Scripts\GameFacade.cs" />
+     <Compile Include="Assets\Scripts\GameLoop.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Asset\IAssetFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Asset\LocalAssetFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Asset\RemoteAssetFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Asset\ResourcesAssetFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Asset\ResoutcesAssetProxyFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Attr\AttrFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Attr\IAttrFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Character\Builder\CharacterBuilderDirector.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Character\Builder\EnemyBuilder.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Character\Builder\ICharacterBuilder.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Character\Builder\SoldierBuilder.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Character\EnemyFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Character\ICharacterFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Character\SoldierFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\FactoryManager.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Weapon\IWeaponFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\Factory\Weapon\WeaponFactory.cs" />
+     <Compile Include="Assets\Scripts\Order\MonoBehaviour\CampOnClick.cs" />
+     <Compile Include="Assets\Scripts\Order\MonoBehaviour\DestroyForTime.cs" />
+     <Compile Include="Assets\Scripts\Order\Tools\UITool.cs" />
+     <Compile Include="Assets\Scripts\Order\Tools\UnityTool.cs" />
+     <Compile Include="Assets\Scripts\SceneState\ISceneState.cs" />
+     <Compile Include="Assets\Scripts\SceneState\SceneStateController.cs" />
+     <Compile Include="Assets\Scripts\SceneState\State\BattleState.cs" />
+     <Compile Include="Assets\Scripts\SceneState\State\MainMenuState.cs" />
+     <Compile Include="Assets\Scripts\SceneState\State\StartState.cs" />
+     <Compile Include="Assets\Scripts\System\AchievementSystem\AchievementMemento.cs" />
+     <Compile Include="Assets\Scripts\System\AchievementSystem\AchievementSystem.cs" />
+     <Compile Include="Assets\Scripts\System\CampSystem\CampSystem.cs" />
+     <Compile Include="Assets\Scripts\System\CampSystem\CaptiveCamp.cs" />
+     <Compile Include="Assets\Scripts\System\CampSystem\Command\ITrainCommand.cs" />
+     <Compile Include="Assets\Scripts\System\CampSystem\Command\TrainCaptiveCommand.cs" />
+     <Compile Include="Assets\Scripts\System\CampSystem\Command\TrainSoldierCommand.cs" />
+     <Compile Include="Assets\Scripts\System\CampSystem\EnergyStategy\IEnergyCostStrategy.cs" />
+     <Compile Include="Assets\Scripts\System\CampSystem\EnergyStategy\SoldierEnergyCostStrategy.cs" />
+     <Compile Include="Assets\Scripts\System\CampSystem\ICamp.cs" />
+     <Compile Include="Assets\Scripts\System\CampSystem\SoldierCamp.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Attr\BaseAttr\CharacterBaseAttr.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Attr\EnemyAttr.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Attr\ICharacterAttr.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Attr\SoldierAttr.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\AttrStrategy\EnemyAttrStrategy.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\AttrStrategy\IAttrStrategy.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\AttrStrategy\SoldierAttrStrategy.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\CharacterSystem.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Enemy\EnemyElf.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Enemy\EnemyOgre.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Enemy\EnemyTroll.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Enemy\IEnemy.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\EnemyAI\EnemyAttackState.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\EnemyAI\EnemyChaseState.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\EnemyAI\EnemyFSMSystem.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\EnemyAI\IEnemyState.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\ICharacter.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Soldier\ISoldier.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Soldier\SoldierCaptain.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Soldier\SoldierCaptive.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Soldier\SoldierRookie.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Soldier\SoldierSergeant.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\SoldierAI\ISoldierState.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\SoldierAI\SoldierAttackState.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\SoldierAI\SoldierChaseState.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\SoldierAI\SoldierFSMSystem.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\SoldierAI\SoldierIdleState.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Visitor\AliveCountVisitor.cs" />
+     <Compile Include="Assets\Scripts\System\CharacterSystem\Visitor\ICharacterVisitor.cs" />
+     <Compile Include="Assets\Scripts\System\EnergySystem\EnergySystem.cs" />
+     <Compile Include="Assets\Scripts\System\GameEventSystem\GameEventSystem.cs" />
+     <Compile Include="Assets\Scripts\System\GameEventSystem\Observer\EnemyKilledObserver\EnemyKillObserverArchievement.cs" />
+     <Compile Include="Assets\Scripts\System\GameEventSystem\Observer\EnemyKilledObserver\EnemyKilledObserverStageSystem.cs" />
+     <Compile Include="Assets\Scripts\System\GameEventSystem\Observer\IGameEventObserver.cs" />
+     <Compile Include="Assets\Scripts\System\GameEventSystem\Observer\NewStageObserver\NewStageObserverArchievement.cs" />
+     <Compile Include="Assets\Scripts\System\GameEventSystem\Observer\SoldierKilledObserver\SoldierKilledObserverArchievement.cs" />
+     <Compile Include="Assets\Scripts\System\GameEventSystem\Subject\EnemyKilledSubject.cs" />
+     <Compile Include="Assets\Scripts\System\GameEventSystem\Subject\IGameEventSubject.cs" />
+     <Compile Include="Assets\Scripts\System\GameEventSystem\Subject\NewStageSubject.cs" />
+     <Compile Include="Assets\Scripts\System\GameEventSystem\Subject\SoldierKilledSubject.cs" />
+     <Compile Include="Assets\Scripts\System\StageSystem\Handler\IStageHandler.cs" />
+     <Compile Include="Assets\Scripts\System\StageSystem\Handler\NormalStageHandler.cs" />
+     <Compile Include="Assets\Scripts\System\StageSystem\StageSystem.cs" />
+     <Compile Include="Assets\Scripts\System\UISystem\CampInfoUI.cs" />
+     <Compile Include="Assets\Scripts\System\UISystem\GamePauseUI.cs" />
+     <Compile Include="Assets\Scripts\System\UISystem\GameStateInfoUI.cs" />
+     <Compile Include="Assets\Scripts\System\UISystem\SoldierInfoUI.cs" />
+     <Compile Include="Assets\Scripts\System\WeaponSystem\Attr\WeaponBaseAttr.cs" />
+     <Compile Include="Assets\Scripts\System\WeaponSystem\IWeapon.cs" />
+     <Compile Include="Assets\Scripts\System\WeaponSystem\WeaponGun.cs" />
+     <Compile Include="Assets\Scripts\System\WeaponSystem\WeaponLaser.cs" />
+     <Compile Include="Assets\Scripts\System\WeaponSystem\WeaponRifle.cs" />
+     <Compile Include="Assets\Scripts\System\WeaponSystem\WeaponRocket.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/work/Unity/new/5.6/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/work/Unity/new/5.6/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>D:/work/Unity/new/5.6/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>D:/work/Unity/new/5.6/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>D:/work/Unity/new/5.6/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>D:/work/Unity/new/5.6/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>D:/work/Unity/new/5.6/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
